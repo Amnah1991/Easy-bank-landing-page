@@ -1,0 +1,131 @@
+@import '../styles.scss';
+
+.container {
+  width: 100%;
+
+}
+
+.section-2,
+.section-3,
+.section-4 {
+  padding: 50px 90px;
+}
+
+
+
+.section-1 {
+  background-color: $light-gray;
+  display: flex;
+  height: 600px;
+  position: relative;
+}
+
+
+.left-box {
+  padding: 50px 90px;
+  margin: auto 0;
+  width: 50%;
+}
+
+
+.right-box {
+  width: 50%;
+  background: url(../assets/images/bg-intro-desktop.svg);
+  background-size: 150% 150%;
+  background-position: left;
+  overflow: hidden;
+
+}
+
+
+.mockup {
+  width: 100%;
+  margin-top: -15%;
+  margin-left: 15%;
+}
+
+
+
+
+.section-2 {
+  background-color: $light-blue;
+  height: auto;
+}
+
+
+.flexbox-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.flexbox {
+  width: 250px;
+}
+
+.flexbox-icon {
+  width: 20%;
+}
+
+.flexbox-title {
+  color: $dark-blue;
+  font-size: 18px;
+  margin: 20px 0;
+  font-weight: 400;
+}
+
+.flexbox-text {
+  color: $blue;
+}
+
+
+.section-3 {
+  background-color: $light-gray;
+}
+
+.bg-white {
+  background-color: $white;
+}
+
+
+.section-3 {
+
+  .flexbox-title,
+  .flexbox-text {
+    font-size: 14px;
+    padding: 0 15px;
+  }
+
+  .flexbox-text {
+    padding-bottom: 40px;
+  }
+
+  .text-sm {
+    color: $blue;
+    font-size: 10px;
+    margin-top: 20px;
+    padding-left: 15px;
+  }
+
+
+  .flexbox-img {
+    height: 50%;
+    width: 100%;
+  }
+
+}
+
+
+@media only screen and (max-width: 800px) {
+  .section-1 {
+    flex-direction: column-reverse;
+  }
+
+  .flexbox-container {
+    flex-direction: column;
+  }
+  .flexbox {
+    width: 90%;
+  }
+   
+}
