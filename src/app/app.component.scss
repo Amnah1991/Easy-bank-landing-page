@@ -34,7 +34,6 @@
   background-size: 150% 150%;
   background-position: left;
   overflow: hidden;
-
 }
 
 
@@ -43,8 +42,6 @@
   margin-top: -15%;
   margin-left: 15%;
 }
-
-
 
 
 .section-2 {
@@ -116,16 +113,42 @@
 }
 
 
+
 @media only screen and (max-width: 800px) {
   .section-1 {
     flex-direction: column-reverse;
+    height: auto;
   }
 
+  .left-box,
+  .right-box {
+    width: 100%;
+    text-align: center;
+    background-position: bottom left;
+    padding: 50px;
+  }
+  
+  .mockup {
+    width: 90%;
+    margin-top: -20%;
+    margin-left: 0;
+  }
+  .section-2 {
+    text-align: center;
+    padding: 50px;
+  }
+
+  .section-3{
+    text-align: center;
+  }
   .flexbox-container {
     flex-direction: column;
+    align-items: center;
   }
+
   .flexbox {
     width: 90%;
+    margin-bottom: 50px;
   }
-   
+
 }

@@ -11,5 +11,16 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  showMenu() {
+    var icon = document.getElementById('navBtn');
+    var menu = document.getElementById('menu');
+    icon.classList.toggle('--open');
+    icon.classList.toggle('--close');
 
+    if (icon.classList.contains('--close')) {
+      menu.style.display = "flex";
+    } else {
+      menu.style.display = "none";
+    }
+  }
 }
